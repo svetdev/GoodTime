@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13E1A4B215FCDDD002561D4 /* RescueApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E1A4A215FCDDD002561D4 /* RescueApiManager.swift */; };
+		AC4906D2215E820E00C21CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4906D1215E820E00C21CFB /* AppDelegate.swift */; };
+		AC4906D4215E820E00C21CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4906D3215E820E00C21CFB /* ViewController.swift */; };
+		AC4906D7215E820E00C21CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4906D5215E820E00C21CFB /* Main.storyboard */; };
+		AC4906D9215E821200C21CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4906D8215E821200C21CFB /* Assets.xcassets */; };
+		AC4906DC215E821200C21CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4906DA215E821200C21CFB /* LaunchScreen.storyboard */; };
+		AC4906E1215E821200C21CFB /* GoodTime WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC4906E0215E821200C21CFB /* GoodTime WatchKit App.app */; };
+		AC4906E7215E821200C21CFB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4906E5215E821200C21CFB /* Interface.storyboard */; };
+		AC4906E9215E821400C21CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4906E8215E821400C21CFB /* Assets.xcassets */; };
+		AC4906F0215E821400C21CFB /* GoodTime WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC4906EF215E821400C21CFB /* GoodTime WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC4906F5215E821400C21CFB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4906F4215E821400C21CFB /* InterfaceController.swift */; };
+		AC4906F7215E821400C21CFB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4906F6215E821400C21CFB /* ExtensionDelegate.swift */; };
+		AC4906F9215E821400C21CFB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4906F8215E821400C21CFB /* NotificationController.swift */; };
+		AC4906FB215E821400C21CFB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4906FA215E821400C21CFB /* ComplicationController.swift */; };
+		AC4906FD215E821500C21CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4906FC215E821500C21CFB /* Assets.xcassets */; };
+		ACF41569215ED2A20029511B /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF41568215ED2A20029511B /* WatchSessionManager.swift */; };
+		ACF4156A215ED2A20029511B /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF41568215ED2A20029511B /* WatchSessionManager.swift */; };
+		ACF4156C215ED4230029511B /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4156B215ED4230029511B /* RequestType.swift */; };
+		ACF4156D215ED4230029511B /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4156B215ED4230029511B /* RequestType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC4906E2215E821200C21CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4906C6215E820E00C21CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4906DF215E821200C21CFB;
+			remoteInfo = "GoodTime WatchKit App";
+		};
+		AC4906F1215E821400C21CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4906C6215E820E00C21CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4906EE215E821400C21CFB;
+			remoteInfo = "GoodTime WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC490705215E821500C21CFB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC4906F0215E821400C21CFB /* GoodTime WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC490709215E821500C21CFB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC4906E1215E821200C21CFB /* GoodTime WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A13E1A4A215FCDDD002561D4 /* RescueApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RescueApiManager.swift; sourceTree = "<group>"; };
+		A1C8CCAF2161B7060091BFEF /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		A1C8CCB02161B7060091BFEF /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
+		AC4906CE215E820E00C21CFB /* GoodTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4906D1215E820E00C21CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC4906D3215E820E00C21CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC4906D6215E820E00C21CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC4906D8215E821200C21CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC4906DB215E821200C21CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC4906DD215E821200C21CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4906E0215E821200C21CFB /* GoodTime WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodTime WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4906E6215E821200C21CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AC4906E8215E821400C21CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC4906EA215E821400C21CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4906EF215E821400C21CFB /* GoodTime WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GoodTime WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4906F4215E821400C21CFB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AC4906F6215E821400C21CFB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AC4906F8215E821400C21CFB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AC4906FA215E821400C21CFB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AC4906FC215E821500C21CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC4906FE215E821500C21CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4906FF215E821500C21CFB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		ACF41568215ED2A20029511B /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		ACF4156B215ED4230029511B /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC4906CB215E820E00C21CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4906EC215E821400C21CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C8CCAE2161B6CB0091BFEF /* BuildConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A1C8CCAF2161B7060091BFEF /* debug.xcconfig */,
+				A1C8CCB02161B7060091BFEF /* release.xcconfig */,
+			);
+			path = BuildConfig;
+			sourceTree = "<group>";
+		};
+		AC4906C5215E820E00C21CFB = {
+			isa = PBXGroup;
+			children = (
+				A1C8CCAE2161B6CB0091BFEF /* BuildConfig */,
+				ACF41567215ED1BE0029511B /* Common */,
+				AC4906D0215E820E00C21CFB /* GoodTime */,
+				AC4906E4215E821200C21CFB /* GoodTime WatchKit App */,
+				AC4906F3215E821400C21CFB /* GoodTime WatchKit Extension */,
+				AC4906CF215E820E00C21CFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC4906CF215E820E00C21CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC4906CE215E820E00C21CFB /* GoodTime.app */,
+				AC4906E0215E821200C21CFB /* GoodTime WatchKit App.app */,
+				AC4906EF215E821400C21CFB /* GoodTime WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC4906D0215E820E00C21CFB /* GoodTime */ = {
+			isa = PBXGroup;
+			children = (
+				AC4906D1215E820E00C21CFB /* AppDelegate.swift */,
+				AC4906D3215E820E00C21CFB /* ViewController.swift */,
+				A13E1A4A215FCDDD002561D4 /* RescueApiManager.swift */,
+				AC4906D5215E820E00C21CFB /* Main.storyboard */,
+				AC4906D8215E821200C21CFB /* Assets.xcassets */,
+				AC4906DA215E821200C21CFB /* LaunchScreen.storyboard */,
+				AC4906DD215E821200C21CFB /* Info.plist */,
+			);
+			path = GoodTime;
+			sourceTree = "<group>";
+		};
+		AC4906E4215E821200C21CFB /* GoodTime WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AC4906E5215E821200C21CFB /* Interface.storyboard */,
+				AC4906E8215E821400C21CFB /* Assets.xcassets */,
+				AC4906EA215E821400C21CFB /* Info.plist */,
+			);
+			path = "GoodTime WatchKit App";
+			sourceTree = "<group>";
+		};
+		AC4906F3215E821400C21CFB /* GoodTime WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC4906F4215E821400C21CFB /* InterfaceController.swift */,
+				AC4906F6215E821400C21CFB /* ExtensionDelegate.swift */,
+				AC4906F8215E821400C21CFB /* NotificationController.swift */,
+				AC4906FA215E821400C21CFB /* ComplicationController.swift */,
+				AC4906FC215E821500C21CFB /* Assets.xcassets */,
+				AC4906FE215E821500C21CFB /* Info.plist */,
+				AC4906FF215E821500C21CFB /* PushNotificationPayload.apns */,
+			);
+			path = "GoodTime WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		ACF41567215ED1BE0029511B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ACF41568215ED2A20029511B /* WatchSessionManager.swift */,
+				ACF4156B215ED4230029511B /* RequestType.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC4906CD215E820E00C21CFB /* GoodTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC49070A215E821500C21CFB /* Build configuration list for PBXNativeTarget "GoodTime" */;
+			buildPhases = (
+				AC4906CA215E820E00C21CFB /* Sources */,
+				AC4906CB215E820E00C21CFB /* Frameworks */,
+				AC4906CC215E820E00C21CFB /* Resources */,
+				AC490709215E821500C21CFB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4906E3215E821200C21CFB /* PBXTargetDependency */,
+			);
+			name = GoodTime;
+			productName = GoodTime;
+			productReference = AC4906CE215E820E00C21CFB /* GoodTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC4906DF215E821200C21CFB /* GoodTime WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC490706215E821500C21CFB /* Build configuration list for PBXNativeTarget "GoodTime WatchKit App" */;
+			buildPhases = (
+				AC4906DE215E821200C21CFB /* Resources */,
+				AC490705215E821500C21CFB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4906F2215E821400C21CFB /* PBXTargetDependency */,
+			);
+			name = "GoodTime WatchKit App";
+			productName = "GoodTime WatchKit App";
+			productReference = AC4906E0215E821200C21CFB /* GoodTime WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AC4906EE215E821400C21CFB /* GoodTime WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC490702215E821500C21CFB /* Build configuration list for PBXNativeTarget "GoodTime WatchKit Extension" */;
+			buildPhases = (
+				AC4906EB215E821400C21CFB /* Sources */,
+				AC4906EC215E821400C21CFB /* Frameworks */,
+				AC4906ED215E821400C21CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoodTime WatchKit Extension";
+			productName = "GoodTime WatchKit Extension";
+			productReference = AC4906EF215E821400C21CFB /* GoodTime WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC4906C6215E820E00C21CFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Andrey Kasatkin";
+				TargetAttributes = {
+					AC4906CD215E820E00C21CFB = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					AC4906DF215E821200C21CFB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					AC4906EE215E821400C21CFB = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AC4906C9215E820E00C21CFB /* Build configuration list for PBXProject "GoodTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC4906C5215E820E00C21CFB;
+			productRefGroup = AC4906CF215E820E00C21CFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC4906CD215E820E00C21CFB /* GoodTime */,
+				AC4906DF215E821200C21CFB /* GoodTime WatchKit App */,
+				AC4906EE215E821400C21CFB /* GoodTime WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC4906CC215E820E00C21CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4906DC215E821200C21CFB /* LaunchScreen.storyboard in Resources */,
+				AC4906D9215E821200C21CFB /* Assets.xcassets in Resources */,
+				AC4906D7215E820E00C21CFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4906DE215E821200C21CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4906E9215E821400C21CFB /* Assets.xcassets in Resources */,
+				AC4906E7215E821200C21CFB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4906ED215E821400C21CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4906FD215E821500C21CFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC4906CA215E820E00C21CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4906D4215E820E00C21CFB /* ViewController.swift in Sources */,
+				A13E1A4B215FCDDD002561D4 /* RescueApiManager.swift in Sources */,
+				ACF41569215ED2A20029511B /* WatchSessionManager.swift in Sources */,
+				AC4906D2215E820E00C21CFB /* AppDelegate.swift in Sources */,
+				ACF4156C215ED4230029511B /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4906EB215E821400C21CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4906F9215E821400C21CFB /* NotificationController.swift in Sources */,
+				AC4906FB215E821400C21CFB /* ComplicationController.swift in Sources */,
+				AC4906F7215E821400C21CFB /* ExtensionDelegate.swift in Sources */,
+				AC4906F5215E821400C21CFB /* InterfaceController.swift in Sources */,
+				ACF4156A215ED2A20029511B /* WatchSessionManager.swift in Sources */,
+				ACF4156D215ED4230029511B /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC4906E3215E821200C21CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4906DF215E821200C21CFB /* GoodTime WatchKit App */;
+			targetProxy = AC4906E2215E821200C21CFB /* PBXContainerItemProxy */;
+		};
+		AC4906F2215E821400C21CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4906EE215E821400C21CFB /* GoodTime WatchKit Extension */;
+			targetProxy = AC4906F1215E821400C21CFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC4906D5215E820E00C21CFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4906D6215E820E00C21CFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC4906DA215E821200C21CFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4906DB215E821200C21CFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AC4906E5215E821200C21CFB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4906E6215E821200C21CFB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC490700215E821500C21CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C8CCAF2161B7060091BFEF /* debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC490701215E821500C21CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C8CCB02161B7060091BFEF /* release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC490703215E821500C21CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89R963Q7GX;
+				INFOPLIST_FILE = "GoodTime WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.svetliy.GoodTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		AC490704215E821500C21CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89R963Q7GX;
+				INFOPLIST_FILE = "GoodTime WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.svetliy.GoodTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		AC490707215E821500C21CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89R963Q7GX;
+				IBSC_MODULE = GoodTime_WatchKit_Extension;
+				INFOPLIST_FILE = "GoodTime WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.svetliy.GoodTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		AC490708215E821500C21CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89R963Q7GX;
+				IBSC_MODULE = GoodTime_WatchKit_Extension;
+				INFOPLIST_FILE = "GoodTime WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.svetliy.GoodTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		AC49070B215E821500C21CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89R963Q7GX;
+				INFOPLIST_FILE = GoodTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.svetliy.GoodTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC49070C215E821500C21CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89R963Q7GX;
+				INFOPLIST_FILE = GoodTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.svetliy.GoodTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC4906C9215E820E00C21CFB /* Build configuration list for PBXProject "GoodTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC490700215E821500C21CFB /* Debug */,
+				AC490701215E821500C21CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC490702215E821500C21CFB /* Build configuration list for PBXNativeTarget "GoodTime WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC490703215E821500C21CFB /* Debug */,
+				AC490704215E821500C21CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC490706215E821500C21CFB /* Build configuration list for PBXNativeTarget "GoodTime WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC490707215E821500C21CFB /* Debug */,
+				AC490708215E821500C21CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC49070A215E821500C21CFB /* Build configuration list for PBXNativeTarget "GoodTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC49070B215E821500C21CFB /* Debug */,
+				AC49070C215E821500C21CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC4906C6215E820E00C21CFB /* Project object */;
+}
