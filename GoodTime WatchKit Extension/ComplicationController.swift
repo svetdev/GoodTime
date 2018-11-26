@@ -289,7 +289,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         let currentTempText = CLKSimpleTextProvider(text: currentTime)
         
-        let weatherColors = [UIColor.cyan, UIColor.yellow, UIColor.red]
+        let weatherColors = [UIColor.red, UIColor.yellow, UIColor.cyan]
         
         let totalTime = UserDefaults.standard.integer(forKey: "totalTime")
         let fraction = Float(totalTime) / Float(28800);
@@ -322,7 +322,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         let currentTempText = CLKSimpleTextProvider(text: currentTime)
         
-        let weatherColors = [UIColor.cyan, UIColor.yellow, UIColor.red]
+        let weatherColors = [UIColor.red, UIColor.yellow, UIColor.cyan]
         
         let totalTime = UserDefaults.standard.integer(forKey: "totalTime") 
         let fraction = Float(totalTime) / Float(28800);

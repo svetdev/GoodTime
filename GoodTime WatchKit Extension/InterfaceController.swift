@@ -91,6 +91,14 @@ extension InterfaceController: WatchOSDelegate {
             if let totalTime = tuple.applicationContext["totalTime"] as? Int {
                 UserDefaults.standard.set(totalTime, forKey: "totalTime")
             }
+            
+            if let d = WKExtension.shared().delegate as? ExtensionDelegate
+            {
+                d.scheduleNextBackgroundRefresh()
+                d.scheduleSnapshotNow()
+            }
+            
+            ComplicationController.refreshComplication()
         }
     }
     

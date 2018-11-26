@@ -14,7 +14,7 @@ class RescueApiManager: NSObject {
     var connectivityHandler = WatchSessionManager.shared
     
     func getLatestTime(completionHandler: @escaping (_ result: Bool) -> ()){
-    
+        print("getting time")
         let task = URLSession.shared.dataTask(with: getUrl()) { data, response, error in
             guard error == nil else {
                 print(error ?? "error")
@@ -26,6 +26,8 @@ class RescueApiManager: NSObject {
                 completionHandler(false)
                 return
             }
+            
+            print(response)
             
             let json = try! JSONSerialization.jsonObject(with: data, options: []) as! NSDictionary
             let labelMessage = self.extractLabelMessage(json: json)
